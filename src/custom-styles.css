@@ -1,0 +1,342 @@
+/* Custom CSS for Proyecto Angel - Black and Red Theme */
+
+:root {
+  --primary-black: #1a1a1a;
+  --secondary-black: #2d2d2d;
+  --primary-red: #dc2626;
+  --secondary-red: #b91c1c;
+  --hover-red: #ef4444;
+  --text-white: #ffffff;
+  --text-gray: #e5e7eb;
+  --border-gray: #4b5563;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--primary-black) !important;
+  color: var(--text-white) !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Navbar Customization */
+.navbar-custom {
+  background-color: var(--primary-black) !important;
+  border-bottom: 3px solid var(--primary-red) !important;
+  box-shadow: 0 2px 10px rgba(220, 38, 38, 0.3) !important;
+}
+
+.navbar-brand {
+  color: var(--primary-red) !important;
+  font-weight: bold !important;
+  font-size: 1.8rem !important;
+}
+
+.navbar-brand:hover {
+  color: var(--hover-red) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-white) !important;
+  font-weight: 500 !important;
+  padding: 0.75rem 1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-red) !important;
+  background-color: rgba(220, 38, 38, 0.1) !important;
+  border-radius: 5px !important;
+}
+
+.dropdown-menu {
+  background-color: var(--secondary-black) !important;
+  border: 1px solid var(--border-gray) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+.dropdown-item {
+  color: var(--text-gray) !important;
+  transition: all 0.3s ease !important;
+}
+
+.dropdown-item:hover {
+  background-color: var(--primary-red) !important;
+  color: var(--text-white) !important;
+}
+
+.dropdown-divider {
+  border-color: var(--border-gray) !important;
+}
+
+/* Cards and Components */
+.card-custom {
+  background-color: var(--secondary-black) !important;
+  border: 1px solid var(--border-gray) !important;
+  border-radius: 10px !important;
+  transition: all 0.3s ease !important;
+}
+
+.card-custom:hover {
+  border-color: var(--primary-red) !important;
+  box-shadow: 0 4px 20px rgba(220, 38, 38, 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+.card-header-custom {
+  background-color: var(--primary-black) !important;
+  border-bottom: 1px solid var(--primary-red) !important;
+  color: var(--text-white) !important;
+}
+
+.card-body-custom {
+  background-color: var(--secondary-black) !important;
+  color: var(--text-gray) !important;
+}
+
+/* Buttons */
+.btn-primary-custom {
+  background-color: var(--primary-red) !important;
+  border-color: var(--primary-red) !important;
+  color: var(--text-white) !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--secondary-red) !important;
+  border-color: var(--secondary-red) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3) !important;
+}
+
+.btn-secondary-custom {
+  background-color: var(--secondary-black) !important;
+  border-color: var(--border-gray) !important;
+  color: var(--text-white) !important;
+  font-weight: 500 !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-secondary-custom:hover {
+  background-color: var(--border-gray) !important;
+  border-color: var(--primary-red) !important;
+  color: var(--text-white) !important;
+}
+
+/* Form Controls */
+.form-control-custom {
+  background-color: var(--secondary-black) !important;
+  border: 1px solid var(--border-gray) !important;
+  color: var(--text-white) !important;
+  border-radius: 8px !important;
+}
+
+.form-control-custom:focus {
+  background-color: var(--secondary-black) !important;
+  border-color: var(--primary-red) !important;
+  box-shadow: 0 0 0 0.2rem rgba(220, 38, 38, 0.25) !important;
+  color: var(--text-white) !important;
+}
+
+.form-control-custom::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Tables */
+.table-custom {
+  background-color: var(--secondary-black) !important;
+  color: var(--text-white) !important;
+}
+
+.table-custom thead th {
+  background-color: var(--primary-black) !important;
+  border-color: var(--primary-red) !important;
+  color: var(--text-white) !important;
+  font-weight: 600 !important;
+}
+
+.table-custom tbody tr {
+  border-color: var(--border-gray) !important;
+}
+
+.table-custom tbody tr:hover {
+  background-color: rgba(220, 38, 38, 0.1) !important;
+}
+
+/* Badges */
+.badge-success-custom {
+  background-color: #10b981 !important;
+  color: var(--text-white) !important;
+}
+
+.badge-warning-custom {
+  background-color: #f59e0b !important;
+  color: var(--text-white) !important;
+}
+
+.badge-danger-custom {
+  background-color: var(--primary-red) !important;
+  color: var(--text-white) !important;
+}
+
+.badge-info-custom {
+  background-color: #3b82f6 !important;
+  color: var(--text-white) !important;
+}
+
+/* Progress Bars */
+.progress-custom {
+  background-color: var(--secondary-black) !important;
+  border: 1px solid var(--border-gray) !important;
+  border-radius: 10px !important;
+}
+
+.progress-bar-custom {
+  background-color: var(--primary-red) !important;
+  background-image: linear-gradient(45deg, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent) !important;
+}
+
+/* Module Cards */
+.module-card {
+  background: linear-gradient(135deg, var(--secondary-black) 0%, var(--primary-black) 100%) !important;
+  border: 1px solid var(--border-gray) !important;
+  border-radius: 15px !important;
+  padding: 2rem !important;
+  text-align: center !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.module-card:hover {
+  border-color: var(--primary-red) !important;
+  box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3) !important;
+  transform: translateY(-5px) !important;
+}
+
+.module-icon {
+  width: 60px !important;
+  height: 60px !important;
+  background-color: var(--primary-red) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto 1rem auto !important;
+  transition: all 0.3s ease !important;
+}
+
+.module-card:hover .module-icon {
+  background-color: var(--hover-red) !important;
+  transform: scale(1.1) !important;
+}
+
+.module-title {
+  color: var(--text-white) !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.module-description {
+  color: var(--text-gray) !important;
+  font-size: 0.9rem !important;
+}
+
+/* Stats Cards */
+.stats-card {
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--secondary-red) 100%) !important;
+  border: none !important;
+  border-radius: 15px !important;
+  color: var(--text-white) !important;
+  padding: 1.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.stats-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4) !important;
+}
+
+.stats-number {
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.stats-label {
+  font-size: 0.9rem !important;
+  opacity: 0.9 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+  
+  .module-card {
+    padding: 1.5rem !important;
+  }
+  
+  .module-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .stats-number {
+    font-size: 2rem !important;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-red);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-red);
+}
+
